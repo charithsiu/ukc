@@ -1,0 +1,94 @@
+<div class="container">
+		<div><p></p></div>
+<div *ngIf="user" >
+		<div class="jumbotron container-fluid col-sm-8">
+				<fieldset class="the-fieldset col-sm-12"  >
+					<legend class="the-legend"><h2>Hello {{user.firstName}}</h2></legend>
+	
+	<a href="/api/auth/signout">Signout</a>
+	<ul>
+		<li><a [routerLink]="['/articles']">List Register Forms</a></li>
+		<!-- <li><a [routerLink]="['/articles/create']">Create Article</a></li> -->
+	</ul>
+		  </fieldset>
+		</div>
+</div>
+<div *ngIf="!user">
+
+		<div class="jumbotron container-fluid col-sm-8">
+			<fieldset class="the-fieldset col-sm-12"  >
+				<legend class="the-legend">SIU Online Prospect Student Contact Management System</legend>
+			
+				<div class="center col-sm-8">
+			<p><a href="/register/" class="btn btn-outline-success btn-lg" role="button">Student Contact Form</a></p>
+			
+			<p><a href="/authentication/signin" class="btn btn-outline-success btn-lg" role="button">Student Advisor Details</a></p>
+			
+			<p><a href="/authentication/signin" class="btn btn-outline-success btn-lg" role="button">Director Details</a></p>
+
+			<p><a href="/authentication/signin" class="btn btn-outline-success btn-lg" role="button">Administrator Details</a></p>
+			
+		</div>
+		<hr>
+		<p><a href="/authentication/signup" class="btn btn-primary" role="button">Signup</a></p>		
+	<!-- <p><a [routerLink]="['/authentication/signup']">Signup</a></p>	
+	<p><a [routerLink]="['/authentication/signin']">Signin</a></p>	
+	<p><a [routerLink]="['/register/']">Register</a></p>	 -->
+			</fieldset>
+			</div>
+</div>
+
+</div>
+<style>
+	.center {
+		padding-left: 20%;
+}
+		.the-legend {
+			color: #FFFFFF;
+			background-color: #660000;
+			padding: 7px;
+			border-radius: 7px;
+			font-weight: bold;
+			font-size: 14px;
+			display: block;
+		-webkit-padding-start: 2px;
+		-webkit-padding-end: 2px;
+		border-width: inherit;
+		border-style: none;
+		border-color: initial;
+		border-image: initial;
+		width: auto;
+	}
+	.the-fieldset {
+		border: 1px solid #660000;
+		padding: 10px;
+		border-radius: 7px;
+		width: auto;
+	}
+	.form-group.row{
+		width: auto;
+	}
+	div.jumbotron.container.fluid{
+		width: auto;
+	}
+	.red-star {
+		color: red;
+		font-size: 60%;
+	}
+	/*.btn-primary,
+	.btn-primary:checked,
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary:active:focus{
+		background-color: #660000;
+		border-color: #660000; 
+	}
+	.btn-primary:visited,
+	.btn-primary:focus {
+		background-color: #660000;
+		border-color: #660000;
+	}*/
+	.btn-lg{
+		width: 300px !important;
+	}
+	</style>
