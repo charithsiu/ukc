@@ -1,6 +1,6 @@
 // Set the 'production' environment configuration object
 module.exports = {
-	db: 'mongodb://localhost/mean-production',
+	db: 'mongodb://localhost/ukc2018registerdb',
 	sessionSecret: 'productionSessionSecret',
 	facebook: {
 		clientID: '364284097340470',

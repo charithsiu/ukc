@@ -1,6 +1,6 @@
 // Set the 'development' environment configuration object
 module.exports = {
-	db: 'mongodb://localhost/registerdb',
+	db: 'mongodb://localhost/ukc2018registerdb',
 	sessionSecret: 'developmentSessionSecret',
 	facebook: {
 		clientID: '116485355692956',
